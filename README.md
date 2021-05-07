@@ -13,10 +13,10 @@ You can schedule a cron job or manually run the script and leave it running in t
 #### Important variables
 - AGE_GROUP: 18 or 45
 - DISTRICTS: Mapping of Districts to District Id required for the API call. You can just have districts relevant for you. I don't really know if there is a mapping given somewhere, couldn't find one. You can get it for your concerned district using the following:
-  - go to https://www.cowin.gov.in/home 
-  - open developer tools (F12 in chrome, or right click and inspect)
-  - search by district 
-  - fill in your district details and search
-  - check networks tab in developer tools 
-  - check the request being made and get the district_id from the url.
+    - go to https://www.cowin.gov.in/home 
+    - open developer tools (F12 in chrome, or right click and inspect)
+    - search by district 
+    - fill in your district details and search
+    - check networks tab in developer tools 
+    - check the request being made and get the district_id from the url.
 - num_weeks: number of weeks which you want to check the availability for (Since the API returns data for 7 days in one call).
