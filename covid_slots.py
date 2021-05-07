@@ -61,7 +61,7 @@ def getSlots(district_id, week):
                             engine.runAndWait()
                             
                             break
-            except KeyError:
+            except:
                 print('[ERROR] Script Stopped')
         else:
             print(f"[ERROR] Error Code {response.status_code}")
