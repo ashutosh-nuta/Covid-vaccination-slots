@@ -1,6 +1,5 @@
 # IMPORTS
 import requests
-import time
 from time import sleep
 import datetime
 import pyttsx3
