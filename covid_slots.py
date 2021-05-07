@@ -18,7 +18,7 @@ headers = {'User-Agent':"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWe
 def getDate(week):
     
     '''
-    Gives the date in required format for the given week number (week 0 is today)
+    Gives the date in required format for the given week number (week 0 is the 7 days starting from today)
     '''
     
     return (datetime.date.today() + datetime.timedelta(weeks = week)).strftime('%d-%m-%y')
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     # Number of weeks' data that you want to check (week 0 is the 7 days starting from today)
     num_weeks = 1
     
-    # Number of requests shouldn't exceed 100 in 5 minutes, adjust sleep time accordingly
+    # Keep on running until stopped by the user or due to some error
     while True:
         
         for district, district_id in DISTRICTS.items():
@@ -95,5 +95,5 @@ if __name__ == "__main__":
             for week in range(0, num_weeks):
                 getSlots(district_id, week)
                 
+            # Number of requests shouldn't exceed 100 in 5 minutes, adjust sleep time accordingly
             sleep(3)
-        break
