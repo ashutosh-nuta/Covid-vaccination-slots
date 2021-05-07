@@ -3,8 +3,9 @@ A python3 script to continously poll for available COVID-19 vaccination slots in
 You can schedule a cron job or manually run the script and leave it running in the background. It will keep on polling for available vaccination slots in the districts you want and print and speak out (sort of an alert if you're doing something else) details for the centres having available slots.
 
 #### Requirements
-You'll need to install the pyttsx3 library for text to speech. <br/> Execute
-`pip3 install pyttsx3` on the terminal.
+- Python 3
+- pyttsx3 library for text to speech. <br/> Execute
+`pip3 install pyttsx3` on the terminal to install.
 
 #### Usage
 `python3 covid_slots.py `
