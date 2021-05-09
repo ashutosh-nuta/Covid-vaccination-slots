@@ -68,13 +68,13 @@ def getSlots(district_id, week):
             
     except requests.exceptions.SSLError:
         print('[ERROR] SSL Certificate issue')
-        pass
+        print()
     except requests.exceptions.ConnectionError:
         print('[ERROR] Connection issue')
-        pass
+        print()
     except requests.exceptions.ReadTimeout:
         print('[ERROR] Timeout issue')
-        pass 
+        print()
 
 
 if __name__ == "__main__":
